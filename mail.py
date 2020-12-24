@@ -34,7 +34,7 @@ P=sys.argv[22]
 
 AWS_REGION = "us-east-1"
 DAVID_GILL="hstone@scalacomputing.com"
-VIKRAM="vjakhar@scalacomputing.com"
+VARUN="vlakshmanan@scalacomputing.com"
 SCALA="ncar-dev@scalacomputing.com"
 f = open(FILE,"r")
 contents=f.read()
@@ -127,7 +127,7 @@ if (BUILD_STATUS=="SUCCESS"):
         response = client.send_raw_email(
             Source=SENDER,
             Destinations=[
-                RECIPIENT,DAVID_GILL,VIKRAM,SCALA
+                RECIPIENT,DAVID_GILL,VARUN,SCALA
             ],
             RawMessage={
                 'Data':msg.as_string(),
@@ -150,7 +150,7 @@ if (BUILD_STATUS=="FAILURE"):
         response = client.send_raw_email(
             Source=SENDER,
             Destinations=[
-                RECIPIENT,DAVID_GILL,VIKRAM,SCALA
+                RECIPIENT,DAVID_GILL,VARUN,SCALA
             ],
             RawMessage={
                 'Data':msg.as_string(),
